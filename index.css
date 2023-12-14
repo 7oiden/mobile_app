@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  background-color: #eef0f4;
+  color: #432000;
+  user-select: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  max-width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  color: #432000;
+  background-color: #dce1eb;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+button {
+  color: #fdfdfd;
+  background-color: #ac485a;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: #432000;
+    transition: background-color 0.3s ease;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: #fffdf8;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem;
+  flex-grow: 1;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #FFECC7;
+  transition: background-color 0.3s ease;
+}
+
+#default-msg {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #432000;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Add the shake animation to an element */
+.button-shake {
+    animation: shake 0.5s;
+}
+
